@@ -34,4 +34,4 @@ footnotereturnlinkcontents = "↩"
 
 [params]
     description = "The Phoenix Engine site is built in Hugo, using [XMin](https://xmin.yihui.name/)."
-    footer = "&copy; Bodie Solomon 2018 | [bodie@synapsegarden.net](mailto:bodie@synapsegarden.net) | [https://github.com/binary132](https://github.com/binary132)"
+    footer = "&copy; Bodie Solomon 2018 | [bodie@synapsegarden.net](mailto:bodie@synapsegarden.net) | [https://github.com/phoenix-engine](https://github.com/phoenix-engine)"
