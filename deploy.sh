@@ -16,12 +16,12 @@ git add . --all
 
 git commit -m "Build ${buildid}"
 
-if [ `git branch --list gh-pages` ] ; then
-  git checkout gh-pages
+if [ `git branch --list master` ] ; then
+  git checkout master
 else
-  git checkout upstream/gh-pages
-  git checkout -b gh-pages
-  git branch --set-upstream-to=upstream/gh-pages
+  git checkout upstream/master
+  git checkout -b master
+  git branch --set-upstream-to=upstream/master
 fi
 
 rm -rf *
