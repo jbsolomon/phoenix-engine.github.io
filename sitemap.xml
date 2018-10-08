@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>phoenix-engine.github.io/post/2018/10/08/the-problem-of-macos-mojave-10.14/</loc>
+    <lastmod>2018-10-08T09:36:36-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>phoenix-engine.github.io/post/2018/09/13/hello-world/</loc>
     <lastmod>2018-09-13T12:54:08-04:00</lastmod>
   </url>
@@ -18,12 +23,12 @@
   
   <url>
     <loc>phoenix-engine.github.io/</loc>
-    <lastmod>2018-09-13T12:54:08-04:00</lastmod>
+    <lastmod>2018-10-08T09:36:36-04:00</lastmod>
   </url>
   
   <url>
     <loc>phoenix-engine.github.io/post/</loc>
-    <lastmod>2018-09-13T12:54:08-04:00</lastmod>
+    <lastmod>2018-10-08T09:36:36-04:00</lastmod>
     <priority>0</priority>
   </url>
   
