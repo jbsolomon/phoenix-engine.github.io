@@ -1,4 +1,4 @@
-baseurl = "phoenix-engine.github.io"
+baseurl = "https://phoenix-engine.github.io/"
 languageCode = "en-us"
 title = "Phoenix Engine"
 theme = "hugo-xmin"
