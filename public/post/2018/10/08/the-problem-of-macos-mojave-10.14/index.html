@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Problem of macOS Mojave 10.14 | Phoenix Engine</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">The Problem of macOS Mojave 10.14</span></h1>
+<h2 class="author">Bodie Solomon</h2>
+<h2 class="date">2018/10/08</h2>
+</div>
+
+<main>
+<p>I've been working on a cross-platform SDL2 codebase to get Phoenix up
+and running, and finally got an OpenGL 4.1 shader to work consistently
+on my different build boxes just a few days ago.  There are a few
+platform conditionals in my CMake, but the codebase itself is clean.</p>
+<p>I just updated to macOS Mojave, and everything broke.
+<a href="http://emacs.1067599.n8.nabble.com/weird-startup-error-in-MacOS-Mojave-td465951.html">Emacs stopped redrawing</a>.
+My Xcode command-line tools were breaking on every build, and my
+Homebrew installation of LLVM was failing to update to 7.0.0.  Most
+importantly for Phoenix, there's a new
+<a href="https://bugzilla.libsdl.org/show_bug.cgi?id=4272">bug in SDL</a>,
+which also appears to
+<a href="https://github.com/glfw/glfw/issues/1334">impact SFML</a>.
+These problems are obviously impacting other
+<a href="https://github.com/openframeworks/openFrameworks/issues/6149">platforms</a>
+<a href="https://github.com/faiface/pixel/issues/140">and</a>
+<a href="https://twitter.com/icculus/status/1047923669991936000">projects</a>.</p>
+<p>Perhaps it shouldn't come as a surprise since
+<a href="https://developer.apple.com/macos/whats-new/#deprecationofopenglandopencl">Apple has deprecated OpenGL and OpenCL support</a>
+as of macOS 10.14, but something about the timing, with finally reaching
+cross-platform coherence in my codebase, really struck a nerve.  I now
+find myself without a common supported native graphics interface, unless
+you like to count the browser.  What's not to love about Javascript
+runtimes and OpenGL ES?</p>
+<p>This brings me to my point: The commons of software, like any commons,
+becomes diseased when those who partake of its benefits don't commit to
+common rules, and don't invest in its health.  Apple can give us all
+the finger, but we can give it right back.</p>
+<p>From now on, I will refuse to support or enable platforms which reject
+or refuse to conform to mainstream common standards, which is perhaps
+the barest minimum bar to enable
+<a href="https://www.gnu.org/philosophy/free-sw.html.en">computing freedom</a>.
+Additionally, I will no longer purchase products from Apple until they
+show a clear commitment to a free and healthy commons for users.</p>
+
+</main>
+
+  <footer>
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "phoenix-engine" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-125715664-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  
+  <hr/>
+  © Bodie Solomon 2020 | <a href="mailto:bodie@synapsegarden.net">bodie@synapsegarden.net</a> | <a href="https://github.com/phoenix-engine">https://github.com/phoenix-engine</a>
+  
+  </footer>
+  </body>
+</html>
+
